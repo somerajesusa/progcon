@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-11-05 08:00:18 AM"/>
+        <attribute name="created" value="UmFtcztMQUIzMDRDMTA7MjAxOS0xMS0wNTswNzozNzozMyBBTTsyMTk2"/>
+        <attribute name="edited" value="UmFtcztMQUIzMDRDMTA7MjAxOS0xMS0wNTswODowMDoxOCBBTTsxOzIyOTg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Number" type="Integer" array="False" size=""/>
+            <output expression="&quot;please enter a number&quot;" newline="True"/>
+            <declare name="Odd" type="Integer" array="False" size=""/>
+            <declare name="Even" type="Integer" array="False" size=""/>
+            <input variable="Number"/>
+            <if expression="Number%2 == 0">
+                <then>
+                    <output expression="Number &amp; &quot;is Even&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="Number &amp; &quot;is Odd&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
