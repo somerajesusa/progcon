@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-11-05 08:30:58 AM"/>
+        <attribute name="created" value="UmFtcztMQUIzMDRDMTA7MjAxOS0xMC0yOTswODowNjoxOCBBTTsyMjAx"/>
+        <attribute name="edited" value="UmFtcztMQUIzMDRDMTA7MjAxOS0xMS0wNTswODozMDo1OCBBTTsxMjsyMzU1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="radius" type="Real" array="False" size=""/>
+            <declare name="diameter" type="Real" array="False" size=""/>
+            <declare name="response" type="String" array="False" size=""/>
+            <declare name="A" type="Integer" array="False" size=""/>
+            <output expression="&quot;do you have the value of a radius or diameter?&quot;" newline="True"/>
+            <input variable="response"/>
+            <if expression="response = &quot;radius&quot;">
+                <then>
+                    <output expression="&quot;Please enter the radius&quot;" newline="True"/>
+                    <input variable="radius"/>
+                    <assign variable="A" expression="3.14*radius*radius"/>
+                    <output expression="A" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;then you must have the value of a diameter? yes or no?&quot;" newline="True"/>
+                    <input variable="response"/>
+                    <if expression="response = &quot;yes&quot;">
+                        <then>
+                            <output expression="&quot;Please enter the diameter&quot;" newline="True"/>
+                            <input variable="diameter"/>
+                            <assign variable="radius" expression="diameter/2"/>
+                            <assign variable="A" expression="3.14*radius^2"/>
+                            <output expression="A" newline="True"/>
+                        </then>
+                        <else>
+                            <breakpoint/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
