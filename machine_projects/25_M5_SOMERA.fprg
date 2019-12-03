@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-12-03 08:13:51 AM"/>
+        <attribute name="created" value="UmFtcztMQUIzMDRDMTE7MjAxOS0xMi0wMzswNzo1NTowMSBBTTsyMTkx"/>
+        <attribute name="edited" value="UmFtcztMQUIzMDRDMTE7MjAxOS0xMi0wMzswODoxMzo1MSBBTTs3OzIzMDU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;please enter values for num1, num2, num3 one by one&quot;" newline="True"/>
+            <declare name="num1, num2, num3" type="Integer" array="False" size=""/>
+            <input variable="num1"/>
+            <input variable="num2"/>
+            <input variable="num3"/>
+            <if expression="num1&lt;num2">
+                <then>
+                    <if expression="num1&lt;num3">
+                        <then>
+                            <output expression="&quot;num1 is the least number&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;num3 is the least number&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="num2&lt;num3">
+                        <then>
+                            <output expression="&quot;num2 is the least number&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;num3 is the least number&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
