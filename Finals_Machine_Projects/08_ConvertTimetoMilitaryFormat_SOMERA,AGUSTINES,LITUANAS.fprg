@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Jesusa"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-23 11:22:57 AM"/>
+        <attribute name="created" value="SmVzdXNhO0xBUFRPUC1RRU9RRzJLMzsyMDIwLTAxLTE2OzA5OjE0OjQ5IFBNOzI5Njg="/>
+        <attribute name="edited" value="SmVzdXNhO0xBUFRPUC1RRU9RRzJLMzsyMDIwLTAxLTIzOzExOjIyOjU3IEFNOzE2OzMxMDQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Welcome! this program will convert 12 hour time to military format. Created by Group 3 composed of Somera, Agustines, and Lituanas&quot;" newline="True"/>
+            <declare name="hour, minutes, ConvertedTime" type="Integer" array="False" size=""/>
+            <declare name="Response" type="String" array="False" size=""/>
+            <declare name="A" type="String" array="False" size=""/>
+            <output expression="&quot;Please enter what hour/s&quot;" newline="True"/>
+            <input variable="hour"/>
+            <output expression="&quot;Please enter how many minute/s&quot;" newline="True"/>
+            <input variable="minutes"/>
+            <output expression="&quot;Enter if it's AM or PM&quot;" newline="True"/>
+            <input variable="Response"/>
+            <if expression="Response = &quot;PM&quot;">
+                <then>
+                    <assign variable="ConvertedTime" expression="hour + 12"/>
+                    <output expression="ConvertedTime &amp; &quot;:&quot; &amp; minutes" newline="True"/>
+                    <output expression="&quot;Would you like to try again? Yes or No?&quot;" newline="True"/>
+                    <input variable="A"/>
+                    <if expression="A = &quot;Yes&quot;">
+                        <then>
+                            <output expression="&quot;Wonderful! let's start again!&quot;" newline="True"/>
+                            <call expression="Main"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;that's it! thank you!&quot;" newline="True"/>
+                            <breakpoint/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;0&quot; &amp; hour &amp; &quot;:&quot; &amp; minutes" newline="True"/>
+                    <output expression="&quot;Would you like to try again? Yes or No?&quot;" newline="True"/>
+                    <input variable="A"/>
+                    <if expression="A = &quot;Yes&quot;">
+                        <then>
+                            <output expression="&quot;Wonderful! let's start again!&quot;" newline="True"/>
+                            <call expression="Main"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;that's it! thank you!&quot;" newline="True"/>
+                            <breakpoint/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

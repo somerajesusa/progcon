@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Jesusa"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-23 11:18:30 AM"/>
+        <attribute name="created" value="SmVzdXNhO0xBUFRPUC1RRU9RRzJLMzsyMDIwLTAxLTE0OzA2OjU4OjExIFBNOzI5NjA="/>
+        <attribute name="edited" value="SmVzdXNhO0xBUFRPUC1RRU9RRzJLMzsyMDIwLTAxLTIzOzExOjE4OjMwIEFNOzEwOzMwOTQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ConvertedUSD, ConvertedPHP" type="Real" array="False" size=""/>
+            <declare name="USD, PHP" type="Real" array="False" size=""/>
+            <declare name="Dollar, Peso" type="Integer" array="False" size=""/>
+            <declare name="Response" type="String" array="False" size=""/>
+            <output expression="&quot;Welcome to Peso and Dollar Currency Converter Program! This program is created by group 3 composed of Somera, Agustines, and Lituanas&quot;" newline="True"/>
+            <output expression="&quot;What do you want to convert? Peso or Dollar?&quot;" newline="True"/>
+            <input variable="Response"/>
+            <if expression="Response == &quot;Peso&quot;">
+                <then>
+                    <output expression="&quot;Please enter the amount of Pesos&quot;" newline="True"/>
+                    <input variable="Peso"/>
+                    <assign variable="USD" expression="0.020"/>
+                    <assign variable="ConvertedUSD" expression="Peso * USD"/>
+                    <output expression="Peso &amp; &quot; PHP&quot; &amp; &quot; when converted is &quot; &amp; ConvertedUSD &amp; &quot; USD&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Please enter the amount of Dollars&quot;" newline="True"/>
+                    <input variable="Dollar"/>
+                    <assign variable="PHP" expression="50.60"/>
+                    <assign variable="ConvertedPHP" expression="Dollar * PHP"/>
+                    <output expression="Dollar &amp; &quot; USD&quot; &amp; &quot; when converted is &quot; &amp; ConvertedPHP &amp; &quot; PHP&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

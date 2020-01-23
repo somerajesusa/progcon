@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Jesusa"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-23 11:13:57 AM"/>
+        <attribute name="created" value="SmVzdXNhO0xBUFRPUC1RRU9RRzJLMzsyMDIwLTAxLTAzOzAxOjA0OjA2IEFNOzI5MzM="/>
+        <attribute name="edited" value="SmVzdXNhO0xBUFRPUC1RRU9RRzJLMzsyMDIwLTAxLTIzOzExOjEzOjU3IEFNOzU7MzA1NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Celsius" type="Real" array="False" size=""/>
+            <declare name="Fahrenheit" type="Real" array="False" size=""/>
+            <output expression="&quot;Hi! Welcome to our celsuis to fahrenheit Converter Program! This is created by group 3 composed of Somera, Agustines, and Lituanas&quot;" newline="True"/>
+            <output expression="&quot;Please enter the value for celsius&quot;" newline="True"/>
+            <input variable="celsius"/>
+            <assign variable="Fahrenheit" expression="Celsius * 9/5 + 32"/>
+            <output expression="Celsius &amp; &quot; Degree Celsius&quot; &amp; &quot; is equivalent to &quot; &amp; Fahrenheit &amp; &quot; Degree Fahrenheit&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

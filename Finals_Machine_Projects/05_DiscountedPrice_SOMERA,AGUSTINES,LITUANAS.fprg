@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Jesusa"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-23 11:17:23 AM"/>
+        <attribute name="created" value="SmVzdXNhO0xBUFRPUC1RRU9RRzJLMzsyMDIwLTAxLTE0OzA1OjAzOjQ5IFBNOzI5NjA="/>
+        <attribute name="edited" value="SmVzdXNhO0xBUFRPUC1RRU9RRzJLMzsyMDIwLTAxLTIzOzExOjE3OjIzIEFNOzQ7MzA1MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="OriginalPrice" type="Integer" array="False" size=""/>
+            <declare name="DiscountRate" type="Real" array="False" size=""/>
+            <declare name="Discount" type="Integer" array="False" size=""/>
+            <declare name="SalePrice" type="Integer" array="False" size=""/>
+            <output expression="&quot;Welcome! This program will compute for the discounted price of the item on sale by group 3 composed of Somera, Agustines, and Lituanas&quot;" newline="True"/>
+            <output expression="&quot;Please enter the original price of the item&quot;" newline="True"/>
+            <input variable="OriginalPrice"/>
+            <output expression="&quot;then, please enter the discount percentage of the item in decimal (e.g. 50% = 0.50)&quot;" newline="True"/>
+            <input variable="DiscountRate"/>
+            <assign variable="Discount" expression="DiscountRate*OriginalPrice"/>
+            <assign variable="SalePrice" expression="OriginalPrice-Discount"/>
+            <output expression="&quot;The discounted price of your item is &quot; &amp; SalePrice" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Jesusa"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-23 11:24:24 AM"/>
+        <attribute name="created" value="SmVzdXNhO0xBUFRPUC1RRU9RRzJLMzsyMDE5LTEyLTMwOzAyOjQ3OjQ2IFBNOzI5NzA="/>
+        <attribute name="edited" value="SmVzdXNhO0xBUFRPUC1RRU9RRzJLMzsyMDIwLTAxLTIzOzExOjI0OjI0IEFNOzU7MzA1MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1, num2" type="Real" array="False" size=""/>
+            <declare name="A" type="Real" array="False" size=""/>
+            <output expression="&quot;Welcome! This program will be able to divide to given values created by group 3 composed of Somera, Agustines, and Lituanas&quot;" newline="True"/>
+            <output expression="&quot;Please enter a value for numerator&quot;" newline="True"/>
+            <input variable="num1"/>
+            <output expression="&quot;Please enter value for denominator&quot;" newline="True"/>
+            <input variable="num2"/>
+            <assign variable="A" expression="num1/num2"/>
+            <output expression="&quot;the answer is &quot; &amp; A" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

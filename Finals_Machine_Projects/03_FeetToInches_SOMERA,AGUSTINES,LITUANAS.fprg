@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Jesusa"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-23 11:12:44 AM"/>
+        <attribute name="created" value="SmVzdXNhO0xBUFRPUC1RRU9RRzJLMzsyMDIwLTAxLTA4OzA3OjU5OjI5IFBNOzI5NzQ="/>
+        <attribute name="edited" value="SmVzdXNhO0xBUFRPUC1RRU9RRzJLMzsyMDIwLTAxLTIzOzExOjEyOjQ0IEFNOzQ7MzA0OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Welcome! This program convert the value of feet to inches created by group 3 composed of Somera, Agustines, and Lituanas&quot;" newline="True"/>
+            <declare name="inches" type="Integer" array="False" size=""/>
+            <declare name="feet" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter how many feet&quot;" newline="True"/>
+            <input variable="feet"/>
+            <assign variable="inches" expression="feet*12"/>
+            <output expression="&quot;the answer is &quot; &amp; inches &amp; &quot; inches&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

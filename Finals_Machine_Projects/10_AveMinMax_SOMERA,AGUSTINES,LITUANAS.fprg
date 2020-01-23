@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Jesusa"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-23 11:25:34 AM"/>
+        <attribute name="created" value="SmVzdXNhO0xBUFRPUC1RRU9RRzJLMzsyMDIwLTAxLTE2OzEwOjAzOjA4IFBNOzI5NTM="/>
+        <attribute name="edited" value="SmVzdXNhO0xBUFRPUC1RRU9RRzJLMzsyMDIwLTAxLTIzOzExOjI1OjM0IEFNOzc7MzA1NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Real" array="False" size=""/>
+            <declare name="A" type="Real" array="True" size="10"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="average, min, max, sum" type="Real" array="False" size=""/>
+            <assign variable="sum" expression="0"/>
+            <output expression="&quot;Welcome! This program will read 10 numbers and compute for the average, min and max value. This is created by group 3 composed of Somera, Agustines and Lituanas&quot;" newline="True"/>
+            <output expression="&quot;please enter 10 numbers&quot;" newline="True"/>
+            <for variable="i" start="0" end="9" direction="inc" step="1">
+                <input variable="n"/>
+                <assign variable="A[i]" expression="n"/>
+                <assign variable="sum" expression="sum + n"/>
+            </for>
+            <assign variable="min" expression="A[0]"/>
+            <assign variable="max" expression="A[0]"/>
+            <for variable="i" start="0" end="9" direction="inc" step="1">
+                <if expression="A[i] &gt; max">
+                    <then>
+                        <assign variable="max" expression="A[i]"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="A[i] &lt; min">
+                    <then>
+                        <assign variable="min" expression="A[i]"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <assign variable="average" expression="sum / 10"/>
+            <output expression="&quot;The average is &quot; &amp; average" newline="True"/>
+            <output expression="&quot;the max value is &quot; &amp; max" newline="True"/>
+            <output expression="&quot;the min value is &quot; &amp; min" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
